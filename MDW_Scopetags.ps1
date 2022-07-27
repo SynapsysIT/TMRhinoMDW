@@ -29,7 +29,7 @@ $cred = New-Object System.Management.Automation.PSCredential("$useraddress", $pa
 Connect-AzureAD -TenantID "de55da9f-7c4c-44c6-8cbe-af4d0a0bfec0" -credential $cred 
 
 connect-msgraph -credential $cred
-write-host "Connexion is ok"
+write-host "Connexion is all ok"
 
 $devicesids = Get-IntuneManagedDevice -Top 1000 | select -ExpandProperty azureaddeviceid
 
