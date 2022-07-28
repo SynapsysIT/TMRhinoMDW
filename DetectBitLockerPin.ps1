@@ -1,0 +1,1 @@
+﻿Write-Output $(Get-BitLockerVolume -MountPoint $env:SystemDrive).KeyProtector | Where { $_.KeyProtectorType -eq 'TpmPin' }
